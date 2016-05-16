@@ -1,7 +1,7 @@
 # TgAntiU202e
 
-[RU](https://github.com/m7d/TgAntiU202e/blob/master/README.ru.md) | EN
------------------------------------------------------------------ | --
+| [RU](https://github.com/m7d/TgAntiU202e/blob/master/README.ru.md) |  EN 	|
+| :---------------------------------------------------------------: |  :-:	|
 
 A script to fight against people who use a special symbol "U202e"
 
