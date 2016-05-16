@@ -1,15 +1,18 @@
+function ok_cb(extra, success, result)
+end
+
 function on_msg_receive (msg)
    findname = string.find (msg.from.print_name, "‮")
    if (msg.text ~= nil) then
       findtext = string.find (msg.text, "‮")
    end
    if ((findname or findtext) ~= nil) then
-      if (msg.to.peer_type == 'chat') then
-         where = msg.to.print_name
+      if (msg.to.peer_type == 'chat' or msg.to.peer_type == 'channel') then
+         chatname = msg.to.print_name
       else
-         where = msg.from.print_name
+         chatname = msg.from.print_name
       end
-      send_msg (where, '@' .. msg.from.username ..' фу таким быть! Переворачивать ТУПО!')
+      send_msg(chatname, '@' .. msg.from.username ..' фу таким быть! Переворачивать ТУПО!', ok_cb, false)
    end
 end
 
