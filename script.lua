@@ -12,7 +12,7 @@ function on_msg_receive (msg)
       else
          chatname = msg.from.print_name
       end
-      send_msg(chatname, '@' .. msg.from.username ..' фу таким быть! Переворачивать ТУПО!', ok_cb, false)
+      send_msg(chatname, "@" .. msg.from.username ..", Respect interlocutors! Don't use special symbol!", ok_cb, false)
    end
 end
 
