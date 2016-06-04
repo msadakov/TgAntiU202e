@@ -37,4 +37,4 @@ telegram-cli -k ~/tg-server.pub -W -s script.lua
 
 Your message
 
-> @[placeholder] фу таким быть! Переворачивать ТУПО!
+> @[placeholder] Respect interlocutors! Don't use special symbol!
